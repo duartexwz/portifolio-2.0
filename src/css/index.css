@@ -679,12 +679,11 @@ h5{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .projeto-imagem{
-    width: 50%;
+    width: 45%;
     height: 300px;
     display: flex;
     border-radius: 10px;
@@ -757,7 +756,9 @@ h5{
     padding: 15px 25px;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    text-align: start;
+    justify-content: center;
+    width: 50%;
     height: 100%;
     max-height: 600px;
     gap: 20px;
@@ -774,7 +775,6 @@ h5{
     font-size: 1.1rem;
     line-height: 1.5;
     color: var(--text-secundary);
-    width: 40ch;
     justify-content: flex-start;
     display: flex;
     padding: 0 0 5px 0;
@@ -799,7 +799,7 @@ h5{
 
 .projeto-links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     width: 100%;
 
@@ -810,7 +810,7 @@ h5{
     padding: 15px 30px;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: var(--text-secundary);
     box-shadow: 0px 0px 4px var(--slate-gray);
     display: flex;
@@ -1251,7 +1251,66 @@ button:hover {
   }
 }
 
+.demo-container {
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo levemente claro */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+}
 
+.demo-container h5 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.demo-subtitle {
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    margin: 0 0 12px 0;
+}
+
+.credential-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.credential-item:last-child {
+    margin-bottom: 0;
+}
+
+.cred-label {
+    color: #888888;
+    width: 60px; /* Mantém os rótulos alinhados */
+    font-weight: 500;
+}
+
+/* Destaca o texto do email e senha */
+.credential-item code {
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo escuro para o input */
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #4da6ff; /* Um tom de azul neon/cyan que destaca bem no dark mode */
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.5px;
+}
+.demo-observations {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória sutil */
+    font-size: 0.85rem;
+    color: #d4b872; /* Tom de aviso suave (dourado/âmbar) */
+    line-height: 1.4;
+}
+
+.demo-observations strong {
+    color: #e2c87c;
+    font-weight: 600;
+}
 
 @media screen and (min-width: 1600px) {
     .container-section-nav{

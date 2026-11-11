@@ -31,6 +31,13 @@ const listProjetos = [
       "Python, FastAPI, Pydantic, SQLAlchemy/Alembic, PostgreSQL, AsyncPG, Docker, Docker Compose, Git e Linux.",
     resultado:
       "Uma aplicação altamente performática, segura e escalável, com código limpo e organizado seguindo padrões de mercado, facilitando a manutenção e garantindo confiabilidade operacional no controle de agendamentos.",
+    ambiente_demonstracao: {
+        acesso: {
+            admin: "admin.public@gmail.com",
+            senha: "Admin@123"
+        },
+        observacoes: "Integrações de terceiros podem não funcionar nesta versão pública por motivos de segurança das chaves de acesso."
+    },
     imagens_carrossel: [
       "/src/assets/agendamento_coffito-fotos/painel_page.png",
       "/src/assets/agendamento_coffito-fotos/login_page.png",
@@ -71,6 +78,13 @@ const listProjetos = [
       "O projeto utiliza ferramentas modernas de desenvolvimento web, garantindo alta performance no lado do cliente e segurança na persistência de dados e processamento do servidor.",
     resultado:
       "Um e-commerce funcional e moderno que automatiza o fluxo de vendas e expande o alcance digital da marca.",
+    ambiente_demonstracao: {
+        acesso: {
+            admin: "jpCroco.public@gmail.com",
+            senha: "Admin@123"
+        },
+        observacoes: "Integrações de terceiros podem não funcionar nesta versão pública por motivos de segurança das chaves de acesso."
+    },
     imagens_carrossel: [
       "/src/assets/JpCroco-Fotos/login_page.png",
       "/src/assets/JpCroco-Fotos/modal_camisa.png",
@@ -112,6 +126,13 @@ const listProjetos = [
       "O projeto utiliza Node.js para regras de negócio robustas no backend e dispensa frameworks complexos no frontend, focando em requisições assíncronas via Axios e modularidade ES6. A infraestrutura é inteiramente dockerizada, garantindo portabilidade sem etapa de build no front.",
     resultado:
       "Uma ferramenta responsiva que automatiza o fluxo de reservas, impede o agendamento em sessões lotadas e centraliza a gestão de participantes e eventos para a equipe de administração.",
+    ambiente_demonstracao: {
+        acesso: {
+            admin: "fisioterapia.public@gmail.com",
+            senha: "Admin@123"
+        },
+        observacoes: "Integrações de terceiros podem não funcionar nesta versão pública por motivos de segurança das chaves de acesso."
+    },
     imagens_carrossel: [
       "/src/assets/Agendamento-fisioterapia/Calendario-Admin.png",
       "/src/assets/Agendamento-fisioterapia/Adicionar-Profissional.png",
@@ -136,7 +157,11 @@ const listProjetos = [
         nome_link: "Repositório",
         url_link: "https://github.com/duartexwz/anaclara-nails",
       },
-      {"icone_link": "/src/assets/icons/internet-svgrepo-com.svg", "nome_link": "Ver Projeto", "url_link": "https://agendamento-anaclara-nails.vercel.app"}
+      {
+        icone_link: "/src/assets/icons/internet-svgrepo-com.svg",
+        nome_link: "Ver Projeto",
+        url_link: "https://agendamento-anaclara-nails.vercel.app"
+      }
     ],
     problema:
       "A necessidade de organizar a agenda da profissional de forma automatizada, evitando conflitos de horários e reduzindo as faltas de clientes através da cobrança de um sinal antecipado.",
@@ -148,6 +173,13 @@ const listProjetos = [
       "O projeto utiliza Python com FastAPI para validações e regras de negócio de alta performance no backend. O frontend é uma SPA ágil com React 19, utilizando Mercado Pago (Checkout Bricks) para transações seguras.",
     resultado:
       "Um sistema escalável que profissionaliza o atendimento, garante o comprometimento das clientes via pagamento de sinal e centraliza toda a administração do salão em uma única interface.",
+    ambiente_demonstracao: {
+        acesso: {
+            admin: "nails.public@gmail.com",
+            senha: "Admin@123"
+        },
+        observacoes: "Integrações de terceiros podem não funcionar nesta versão pública por motivos de segurança das chaves de acesso."
+    },
     imagens_carrossel: [
       "/src/assets/nail-appointment-img/home-2.png",
       "/src/assets/nail-appointment-img/catalogo.png",
@@ -187,6 +219,9 @@ export default function renderizarProjetos() {
     clone.querySelector(".tecnologias").textContent =
       projeto.tecnologias_usadas;
     clone.querySelector(".resultado").textContent = projeto.resultado;
+    clone.querySelector(".ambiente_demonstracao-admin").textContent = projeto.ambiente_demonstracao.acesso.admin;
+    clone.querySelector(".ambiente_demonstracao-senha").textContent = projeto.ambiente_demonstracao.acesso.senha;
+    clone.querySelector(".ambiente_demonstracao-obs").textContent = projeto.ambiente_demonstracao.observacoes;
 
     // Badges de tecnologias
     const containerTechs = clone.querySelector(".projeto-techs");
@@ -309,6 +344,13 @@ export default function renderizarProjetos() {
       linkRepo.href = projeto.links[1].url_link || "#";
       linkRepo.querySelector("img").src = projeto.links[1].icone_link;
       linkRepo.querySelector("span").textContent = projeto.links[1].nome_link;
+    }
+
+    const linkProject = clone.querySelector(".link-project");
+    if (linkProject && projeto.links && projeto.links[2]) {
+        linkProject.href = projeto.links[2].url_link || "#";
+        linkProject.querySelector("img").src = projeto.links[2].icone_link;
+        linkProject.querySelector("span").textContent = projeto.links[2].nome_link;
     }
 
     containerProjetos.appendChild(clone);
