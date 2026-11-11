@@ -30,6 +30,74 @@ const listProjetos = [
         "tecnologias_usadas": "O projeto utiliza ferramentas modernas de desenvolvimento web, garantindo alta performance no lado do cliente e segurança na persistência de dados e processamento do servidor.",
         "resultado": "Um e-commerce funcional e moderno que automatiza o fluxo de vendas e expande o alcance digital da marca.",
         "imagens_carrossel": ["/src/assets/JpCroco-Fotos/login_page.png", "/src/assets/JpCroco-Fotos/modal_camisa.png", "/src/assets/JpCroco-Fotos/modal_pagamento.png", "/src/assets/JpCroco-Fotos/page_catalogo.png", "/src/assets/JpCroco-Fotos/page_home.png"]
+    },
+    {
+        "capa": "/src/assets/Agendamento-fisioterapia/index-cliente.png",
+        "titulo": "Agendamento Saúde Ocupacional",
+        "descricao": "Sistema web completo para agendamento de sessões de fisioterapia e terapia ocupacional, contendo interface pública e painel administrativo.",
+        "tecnologias": [
+            "Node.js",
+            "Express",
+            "JavaScript",
+            "HTML/CSS",
+        ],
+        "links": [
+            {
+                "icone_link": "/src/assets/icons/link-svgrepo-com.svg",
+                "nome_link": "Ver detalhes"
+            },
+            {
+                "icone_link": "/src/assets/icons/external-link-svgrepo-com.svg",
+                "nome_link": "Repositório",
+                "url_link": "https://github.com/duartexwz/agendamento-fisioterapia-coffito"
+            }
+        ],
+        "problema": "A necessidade de organizar de forma eficiente as marcações de consultas de saúde ocupacional, garantindo o controle rigoroso de vagas disponíveis por sessão e facilitando a gestão de profissionais.",
+        "solucao": "Desenvolvimento de uma plataforma de agendamentos com gestão em tempo real de vagas, contendo uma página pública simplificada para inscrições e um painel de administração protegido por autenticação.",
+        "abordagem": "Implementação de uma API RESTful em Node.js com Express e arquivos JSON como banco de dados. No front-end, optou-se por tecnologias nativas (Vanilla JS em módulos, HTML e CSS puros) integradas ao FullCalendar para uma interface leve, orquestrando tudo em containers Docker.",
+        "tecnologias_usadas": "O projeto utiliza Node.js para regras de negócio robustas no backend e dispensa frameworks complexos no frontend, focando em requisições assíncronas via Axios e modularidade ES6. A infraestrutura é inteiramente dockerizada, garantindo portabilidade sem etapa de build no front.",
+        "resultado": "Uma ferramenta responsiva que automatiza o fluxo de reservas, impede o agendamento em sessões lotadas e centraliza a gestão de participantes e eventos para a equipe de administração.",
+        "imagens_carrossel": [
+            "/src/assets/Agendamento-fisioterapia/Calendario-Admin.png",
+            "/src/assets/Agendamento-fisioterapia/Adicionar-Profissional.png",
+            "/src/assets/Agendamento-fisioterapia/Adicionar-Evento.png",
+            "/src/assets/Agendamento-fisioterapia/Cadastros.png",
+            "/src/assets/Agendamento-fisioterapia/Sessao-Selecionada-Cliente.png"
+        ]
+    },
+    {
+        "capa": "/src/assets/nail-appointment-img/home-2.png",
+        "titulo": "Ana Clara Nails",
+        "descricao": "Sistema completo de agendamento online para nail designers, incluindo catálogo interativo de modelos, gestão de horários e pagamento antecipado de sinal.",
+        "tecnologias": [
+            "React",
+            "FastAPI",
+            "PostgreSQL",
+            "Vercel"
+        ],
+        "links": [
+            {
+                "icone_link": "/src/assets/icons/link-svgrepo-com.svg",
+                "nome_link": "Ver detalhes"
+            },
+            {
+                "icone_link": "/src/assets/icons/external-link-svgrepo-com.svg",
+                "nome_link": "Repositório",
+                "url_link": "https://github.com/duartexwz/anaclara-nails"
+            }
+        ],
+        "problema": "A necessidade de organizar a agenda da profissional de forma automatizada, evitando conflitos de horários e reduzindo as faltas de clientes através da cobrança de um sinal antecipado.",
+        "solucao": "Desenvolvimento de uma plataforma web que integra o agendamento de serviços ao Mercado Pago, além de fornecer um painel administrativo completo para gerenciar a equipe, as clientes e o fluxo de caixa.",
+        "abordagem": "Construção de uma aplicação moderna com frontend em React e TanStack Start, integrado a uma API robusta em FastAPI e PostgreSQL. A infraestrutura utiliza Docker e Nginx para orquestração e resolução de CORS.",
+        "tecnologias_usadas": "O projeto utiliza Python com FastAPI para validações e regras de negócio de alta performance no backend. O frontend é uma SPA ágil com React 19, utilizando Mercado Pago (Checkout Bricks) para transações seguras.",
+        "resultado": "Um sistema escalável que profissionaliza o atendimento, garante o comprometimento das clientes via pagamento de sinal e centraliza toda a administração do salão em uma única interface.",
+        "imagens_carrossel": [
+            "/src/assets/nail-appointment-img/home-2.png",
+            "/src/assets/nail-appointment-img/catalogo.png",
+            "/src/assets/nail-appointment-img/agendar.png",
+            "/src/assets/nail-appointment-img/painel.png",
+            "/src/assets/nail-appointment-img/horarios-painel.png"
+        ]
     }
 ];
 
