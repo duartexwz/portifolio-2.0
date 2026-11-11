@@ -893,6 +893,7 @@ h5{
 .contato-footer {
     display: flex;
     width: 100%;
+    height: 300px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -1487,9 +1488,14 @@ button:hover {
         0% { opacity: 1; }
         100% { opacity: 0; }
     }
+    #contato{
+        margin-top: 10%;
+        height: 300px;
+    }
     .contato-footer {
         display: flex;
         width: 100%;
+        height: 300px !important;
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
@@ -1524,5 +1530,518 @@ button:hover {
         padding: 20px 30px;
         font-size: 1.2rem;
     }       
+ 
+}
 
+/* =========================================================
+   RESPONSIVIDADE - Desktops menores, Tablets e Mobile (2026)
+   Breakpoints baseados nas resoluções mais utilizadas em 2026.
+   ========================================================= */
+
+/* Desktops menores (<= 1280px) */
+@media screen and (max-width: 1280px) {
+    .container-section-nav {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .nav-name h3 {
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    .nav-bar {
+        width: 100%;
+        max-width: 520px;
+    }
+    .nav-links li {
+        padding: 0 12px;
+    }
+    .texto-introducao h1 {
+        font-size: 3.2rem;
+    }
+    .introducao-page {
+        max-width: 90%;
+    }
+    .btn-action a {
+        max-width: 250px;
+        padding: 16px;
+        font-size: 1rem;
+    }
+    .conteudo-servicos {
+        gap: 15px;
+    }
+    .center h4 {
+        font-size: 1.5rem;
+    }
+    .sobre-info {
+        width: 60%;
+    }
+    .sobre-info p {
+        max-width: 60ch;
+        font-size: 0.95rem;
+    }
+    .img-sobre {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .projeto-info {
+        width: 45%;
+    }
+    .projeto-info p {
+        width: auto;
+        max-width: 100%;
+    }
+    .contato-footer {
+        padding: 50px 30px;
+        gap: 30px;
+    }
+}
+
+/* Tablets e desktops pequenos (<= 1024px) */
+@media screen and (max-width: 1024px) {
+    html {
+        scroll-padding-top: 100px;
+    }
+    .container-section-nav {
+        padding: 0 15px;
+    }
+    #nav {
+        height: auto;
+        min-height: 55px;
+        flex-wrap: wrap;
+        padding: 8px 0;
+        border-radius: 20px;
+    }
+    .nav-name {
+        position: static;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-name h3 {
+        margin-left: 0;
+        font-size: 1.4rem;
+    }
+    .nav-bar {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        top: auto;
+        box-shadow: none;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+    .nav-links li {
+        padding: 6px 10px;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    main {
+        margin-top: 14%;
+    }
+    #inicio {
+        min-height: auto;
+    }
+    .introducao-page {
+        position: static;
+        max-width: 100%;
+        margin-top: 8%;
+    }
+    .texto-introducao h1 {
+        font-size: 2.6rem;
+    }
+    .texto-introducao p {
+        font-size: 1rem;
+    }
+    .btn-action {
+        margin-top: 40px;
+    }
+    .btn-action a {
+        max-width: 100%;
+        width: 100%;
+    }
+    #section-servicos,
+    #sobre {
+        min-height: auto;
+        height: auto;
+    }
+    .container-section {
+        padding: 60px 20px;
+        min-height: auto;
+    }
+    #inicio .container-section {
+        padding: 0 20px;
+    }
+    .conteudo-servicos {
+        flex-direction: column;
+    }
+    .servicos {
+        width: 100%;
+    }
+    .center h4 {
+        font-size: 1.6rem;
+    }
+    .sobre-mim {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre-info {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .sobre-info h4 {
+        font-size: 1.6rem;
+    }
+    .sobre-info p {
+        max-width: 100%;
+    }
+    .img-sobre {
+        max-width: 280px;
+        max-height: 280px;
+    }
+    .grid-tecnologias {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .progresso-tecnologias,
+    .tecnologia-icons {
+        width: 100%;
+    }
+    .tecnologia-icons {
+        justify-content: center;
+    }
+    .tecnologia-icons button {
+        min-width: 110px;
+        height: 150px;
+    }
+    .sk-tile img {
+        max-width: 70px;
+    }
+    .portifolio {
+        gap: 25px;
+    }
+    .projeto-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .projeto-imagem,
+    .carrossel-fotos {
+        width: 100%;
+        height: 260px;
+    }
+    .projeto-info {
+        width: 100%;
+        max-height: none;
+        padding: 15px 0;
+    }
+    .projeto-info p {
+        width: auto;
+        max-width: 100%;
+    }
+    .projeto-techs {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .projeto-links {
+        flex-wrap: wrap;
+    }
+    .projeto-links a {
+        flex: 1 1 45%;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    .detalhes-projeto {
+        flex-direction: column;
+    }
+    .esquerda,
+    .direita {
+        width: 100%;
+    }
+    .ver-mais {
+        width: 100%;
+    }
+    .footer-servicos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+    .title-footer {
+        max-width: 100%;
+    }
+    .title-footer h4 {
+        font-size: 1.6rem;
+    }
+    .buttons-footer {
+        width: 100%;
+        flex-direction: column;
+    }
+    .buttons-footer .orcamento-footer,
+    .buttons-footer .orcamento-whatsapp {
+        width: 100%;
+    }
+    #contato {
+        height: auto;
+        margin-top: 8%;
+    }
+    .contato-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    .footer-coluna {
+        align-items: center;
+    }
+    .footer-item {
+        justify-content: center;
+    }
+    .orcamento-card {
+        width: 95%;
+        max-width: 95%;
+        padding: 20px 15px;
+    }
+    .title-card h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets em retrato e mobiles grandes (<= 768px) */
+@media screen and (max-width: 768px) {
+    html {
+        scroll-padding-top: 90px;
+    }
+    main {
+        margin-top: 18%;
+    }
+    .texto-introducao h1 {
+        font-size: 2.1rem;
+    }
+    .nav-name h3 {
+        font-size: 1.2rem;
+    }
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+    .nav-links li {
+        padding: 4px 8px;
+    }
+    .btn-action {
+        gap: 12px;
+        margin-top: 30px;
+    }
+    .btn-action a {
+        padding: 14px;
+        font-size: 0.95rem;
+    }
+    .container-section {
+        padding: 50px 16px;
+    }
+    .title-section h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    .center h4 {
+        font-size: 1.4rem;
+    }
+    .center p,
+    .sobre-info p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    .top {
+        padding: 15px;
+    }
+    .bottom {
+        padding: 15px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .bottom button {
+        font-size: 0.65rem;
+        padding: 4px 8px;
+    }
+    .img-sobre {
+        max-width: 220px;
+        max-height: 220px;
+    }
+    .tecnologia-icons button {
+        min-width: 100px;
+        height: 130px;
+    }
+    .sk-tile img {
+        max-width: 60px;
+    }
+    .sk-name {
+        font-size: 0.9rem;
+        margin-bottom: 10%;
+    }
+    .projeto-imagem,
+    .carrossel-fotos {
+        height: 220px;
+    }
+    .projeto-info h3 {
+        font-size: 1.3rem;
+    }
+    .projeto-info p {
+        font-size: 1rem;
+    }
+    .projeto-links a {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+    .tech-badge {
+        padding: 5px 14px;
+        font-size: 0.75rem;
+    }
+    .esquerda h5,
+    .direita h5 {
+        font-size: 0.9rem;
+    }
+    .esquerda p,
+    .direita p {
+        font-size: 0.9rem;
+    }
+    .orcamento-card {
+        padding: 18px 12px;
+    }
+    .title-card h4 {
+        font-size: 1.1rem;
+    }
+    .form-group-name input {
+        padding: 12px 15px;
+    }
+    .button-post-name {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .footer-servicos {
+        padding: 20px 16px;
+    }
+    .title-footer h4 {
+        font-size: 1.4rem;
+    }
+    .title-footer p {
+        font-size: 0.95rem;
+    }
+    .orcamento-footer,
+    .orcamento-whatsapp {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+    .perfil-footer h4 {
+        font-size: 1.1rem;
+    }
+    .footer-coluna h5 {
+        font-size: 0.9rem;
+    }
+    .footer-coluna a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobiles (<= 480px) */
+@media screen and (max-width: 480px) {
+    html {
+        scroll-padding-top: 80px;
+    }
+    main {
+        margin-top: 22%;
+    }
+    #nav {
+        border-radius: 16px;
+    }
+    .nav-name h3 {
+        font-size: 1.1rem;
+    }
+    .nav-links {
+        gap: 2px;
+    }
+    .nav-links li {
+        padding: 4px 6px;
+    }
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    .texto-introducao h1 {
+        font-size: 1.7rem;
+    }
+    .texto-introducao p {
+        font-size: 0.95rem;
+    }
+    .btn-action a {
+        padding: 12px;
+        font-size: 0.9rem;
+        gap: 12px;
+    }
+    .container-section {
+        padding: 40px 14px;
+    }
+    .title-section h4 {
+        font-size: 1.3rem;
+    }
+    .center h4 {
+        font-size: 1.25rem;
+    }
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .top p {
+        margin-top: 0;
+    }
+    .tecnologia-icons {
+        gap: 10px;
+        padding: 15px 10px;
+    }
+    .tecnologia-icons button {
+        min-width: 100px;
+        height: 120px;
+    }
+    .sk-tile img {
+        max-width: 50px;
+    }
+    .projeto-imagem,
+    .carrossel-fotos {
+        height: 180px;
+    }
+    .projeto-links {
+        flex-direction: column;
+    }
+    .projeto-links a {
+        width: 100%;
+    }
+    .ver-mais {
+        padding: 15px;
+    }
+    .orcamento-card {
+        width: 98%;
+        padding: 15px 10px;
+    }
+    .title-card h4 {
+        font-size: 1rem;
+    }
+    .select-trigger {
+        padding: 12px;
+    }
+    .button-post-name img {
+        width: 20px;
+    }
+    .contato-footer {
+        padding: 30px 14px;
+    }
+    .imagem-footer {
+        width: 40px;
+        height: 40px;
+    }
 }

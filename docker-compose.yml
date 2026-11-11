@@ -1,0 +1,9 @@
+services:
+  front:
+     build:
+        context: ./src
+     image: front_portifolio
+     container_name: container_front
+     ports:
+       - "8017:17"
+     restart: unless-stopped
