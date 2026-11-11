@@ -14,7 +14,6 @@ export default function scrollTriggerPage(){
         .img-sobre,
         .tecnologias-title,
         .progresso-tecnologias,
-        #section-footer,
         .projeto-card`
     ); 
 
