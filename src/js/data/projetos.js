@@ -65,7 +65,7 @@ const listProjetos = [
       {
         icone_link: "/src/assets/icons/internet-svgrepo-com.svg",
         nome_link: "Ver Projeto",
-        url_link: "https://jpcroco.vercel.app",
+        url_link: "https://jpcroco-portifolio.vercel.app",
       },
     ],
     problema:
