@@ -175,7 +175,7 @@ const listProjetos = [
       "Um sistema escalável que profissionaliza o atendimento, garante o comprometimento das clientes via pagamento de sinal e centraliza toda a administração do salão em uma única interface.",
     ambiente_demonstracao: {
         acesso: {
-            admin: "nails.public@gmail.com",
+            admin: "nail.public@gmail.com",
             senha: "Admin@123"
         },
         observacoes: "A função de pagamento estará indisponível, por motivos de segurança aos dados da cliente, as variáveis do Mercado Pago API foram removidas."
