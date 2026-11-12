@@ -113,7 +113,7 @@ const listProjetos = [
       {
         icone_link: "/src/assets/icons/internet-svgrepo-com.svg",
         nome_link: "Ver Projeto",
-        url_link: "https://sistema-agendamento-fisioterapia-coffito.vercel.app",
+        url_link: "https://agendamento-fisioterapia-coffito.vercel.app",
       },
     ],
     problema:
@@ -160,7 +160,7 @@ const listProjetos = [
       {
         icone_link: "/src/assets/icons/internet-svgrepo-com.svg",
         nome_link: "Ver Projeto",
-        url_link: "https://agendamento-anaclara-nails.vercel.app"
+        url_link: "https://agendamento-nails-dev.vercel.app/admin/agendamentos"
       }
     ],
     problema:
