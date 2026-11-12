@@ -83,7 +83,7 @@ const listProjetos = [
             admin: "jpCroco.public@gmail.com",
             senha: "Admin@123"
         },
-        observacoes: "Integrações de terceiros podem não funcionar nesta versão pública por motivos de segurança das chaves de acesso."
+        observacoes: "A função de pagamento estará indisponível, por motivos de segurança aos dados do cliente, as variáveis do Mercado Pago API foram removidas."
     },
     imagens_carrossel: [
       "/src/assets/JpCroco-Fotos/login_page.png",
@@ -131,7 +131,7 @@ const listProjetos = [
             admin: "fisioterapia.public@gmail.com",
             senha: "Admin@123"
         },
-        observacoes: "Integrações de terceiros podem não funcionar nesta versão pública por motivos de segurança das chaves de acesso."
+        observacoes: "O salvamento de dados no arquivo json pode está indisponível pela falta de suporte para esse tipo de armazenamento no vercel."
     },
     imagens_carrossel: [
       "/src/assets/Agendamento-fisioterapia/Calendario-Admin.png",
@@ -178,7 +178,7 @@ const listProjetos = [
             admin: "nails.public@gmail.com",
             senha: "Admin@123"
         },
-        observacoes: "Integrações de terceiros podem não funcionar nesta versão pública por motivos de segurança das chaves de acesso."
+        observacoes: "A função de pagamento estará indisponível, por motivos de segurança aos dados da cliente, as variáveis do Mercado Pago API foram removidas."
     },
     imagens_carrossel: [
       "/src/assets/nail-appointment-img/home-2.png",
