@@ -2129,4 +2129,9 @@ button:hover {
         width: 40px;
         height: 40px;
     }
+    .credential-item code {
+        word-break: break-word; /* ou overflow-wrap: break-word; */
+        white-space: pre-wrap;
+    }
+   
 }
