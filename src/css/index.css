@@ -1284,7 +1284,7 @@ button:hover {
 }
 
 .cred-label {
-    color: #888888;
+    color: var(--text-secundary);
     width: 60px; /* Mantém os rótulos alinhados */
     font-weight: 500;
 }
@@ -1310,6 +1310,14 @@ button:hover {
 .demo-observations strong {
     color: #e2c87c;
     font-weight: 600;
+}
+.ambiente_demonstracao-pagina code{
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo escuro para o input */
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #4da6ff; /* Um tom de azul neon/cyan que destaca bem no dark mode */
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 1600px) {

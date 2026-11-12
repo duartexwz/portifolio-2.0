@@ -129,7 +129,8 @@ const listProjetos = [
     ambiente_demonstracao: {
         acesso: {
             admin: "fisioterapia.public@gmail.com",
-            senha: "Admin@123"
+            senha: "Admin@123",
+            pagina_admin: "Basta adicionar o <code>admin.html</code> a url do site para acessar o painel",
         },
         observacoes: "O salvamento de dados no arquivo json pode está indisponível pela falta de suporte para esse tipo de armazenamento no vercel."
     },
@@ -160,7 +161,7 @@ const listProjetos = [
       {
         icone_link: "/src/assets/icons/internet-svgrepo-com.svg",
         nome_link: "Ver Projeto",
-        url_link: "https://agendamento-nails-dev.vercel.app/admin/agendamentos"
+        url_link: "https://agendamento-nails-dev.vercel.app"
       }
     ],
     problema:
@@ -219,6 +220,7 @@ export default function renderizarProjetos() {
     clone.querySelector(".tecnologias").textContent =
       projeto.tecnologias_usadas;
     clone.querySelector(".resultado").textContent = projeto.resultado;
+    clone.querySelector(".ambiente_demonstracao-pagina").innerHTML = projeto.ambiente_demonstracao.acesso.pagina_admin;
     clone.querySelector(".ambiente_demonstracao-admin").textContent = projeto.ambiente_demonstracao.acesso.admin;
     clone.querySelector(".ambiente_demonstracao-senha").textContent = projeto.ambiente_demonstracao.acesso.senha;
     clone.querySelector(".ambiente_demonstracao-obs").textContent = projeto.ambiente_demonstracao.observacoes;
