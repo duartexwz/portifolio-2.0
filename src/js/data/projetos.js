@@ -83,7 +83,7 @@ const listProjetos = [
             admin: "jpCroco.public@gmail.com",
             senha: "Admin@123"
         },
-        observacoes: "A função de pagamento estará indisponível, por motivos de segurança aos dados do cliente, as variáveis do Mercado Pago API foram removidas."
+        observacoes: "A função de pagamento e de frete estará indisponível, por motivos de segurança aos dados do cliente, as variáveis de integração foram removidas."
     },
     imagens_carrossel: [
       "/src/assets/JpCroco-Fotos/login_page.png",
@@ -220,7 +220,7 @@ export default function renderizarProjetos() {
     clone.querySelector(".tecnologias").textContent =
       projeto.tecnologias_usadas;
     clone.querySelector(".resultado").textContent = projeto.resultado;
-    clone.querySelector(".ambiente_demonstracao-pagina").innerHTML = projeto.ambiente_demonstracao.acesso.pagina_admin;
+    clone.querySelector(".ambiente_demonstracao-pagina").innerHTML = projeto.ambiente_demonstracao.acesso.pagina_admin || null;
     clone.querySelector(".ambiente_demonstracao-admin").textContent = projeto.ambiente_demonstracao.acesso.admin;
     clone.querySelector(".ambiente_demonstracao-senha").textContent = projeto.ambiente_demonstracao.acesso.senha;
     clone.querySelector(".ambiente_demonstracao-obs").textContent = projeto.ambiente_demonstracao.observacoes;
